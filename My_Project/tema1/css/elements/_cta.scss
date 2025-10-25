@@ -1,0 +1,207 @@
+.calltoaction {
+  padding: 50px 0px;
+  // min-height: 400px;
+  position: relative;
+  overflow: hidden;
+  .wrapper {
+    max-width: 1600px;
+  }
+  .box {
+    text-align: center;
+    z-index: 100;
+    position: relative;
+    h1 {
+      color: $light;
+      font-size: 55px;
+    }
+    h2 {
+      color: $light;
+      font-weight: 700;
+      text-align: center;
+      margin: 15px 0px;
+      font-size: 30px;
+      text-transform: uppercase;
+    }
+    p{
+      font-size: 15px;
+      letter-spacing: 2px;
+      text-align: center;
+      margin: auto;
+      font-weight: 400;
+      color: $light;
+      max-width: 900px;
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 70%;
+    height: 100%;
+    background-color: $secondary;
+    z-index: 1;
+    opacity: 0.7;
+  }
+
+  .bussines {
+    position: absolute;
+    width: 70%;
+    top: 0px;
+    left: 0px;
+    object-fit: cover;
+    height: 100%;
+  }
+  .second {
+    position: absolute;
+    width: 70%;
+    top: -50%;
+    right: -50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    transform: rotate(18deg);
+    overflow: hidden;
+    width: 100%;
+    height: 300%;
+    z-index: 2;
+    &::after {
+      position: absolute;
+      content: "";
+      right: -15px;
+      top: -15pxpx;
+      left: -15px;
+      bottom: -15px;
+      width: 100%;
+      height: 100%;
+      background-color: $primary;
+      z-index: 21;
+      opacity: 0.85;
+    }
+
+    img {
+      position: absolute;
+      width: 70%;
+      top: 0px;
+      right: 0px;
+      left: -10%;
+      object-fit: cover;
+      transform: rotate(-18deg);
+      min-height: 100%;
+    }
+  }
+  .button {
+    display: inline-block;
+    border-radius: 30px;
+    background-color: $light;
+    font-size: 20px;
+    color: $primary;
+    font-size: 15px;
+    width: 300px;
+    padding: 17px;
+    margin-top: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all ease 0.25s;
+    position: relative;
+    .text {
+      width: 200px;
+      text-align: left;
+      position: absolute;
+      right: -220px;
+      top: 0px;
+
+      p {
+        color: $light;
+        font-style: italic;
+      }
+      img {
+        width: 50px;
+        height: 50px;
+        margin-top: 5px;
+        transform: rotate(50deg) !important;
+      }
+    }
+    &:hover {
+      background-color: $primary;
+      color: $light;
+    }
+    &:hover .text {
+      opacity: 0.7;
+    }
+  }
+  // .demo {
+  //   display: block;
+  //   margin-top: 30px;
+  //   color: $light;
+  //   font-size: 18px;
+  // }
+  .centerBtn11{
+    margin-top: 0;
+  }
+  .in_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .calltoaction .box h1 {
+    color: $light;
+    font-size: 45px;
+  }
+  .calltoaction .box h2 {
+    color: $light;
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .calltoaction {
+    min-height: 350px;
+  }
+  .calltoaction .box h1 {
+    color: $light;
+    font-size: 35px;
+  }
+  .calltoaction .box h2 {
+    color: $light;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-top: 20px;
+  }
+  .calltoaction .button {
+    margin-top: 22px;
+  }
+  .calltoaction .button .text {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .calltoaction::before {
+    width: 100%;
+  }
+  .calltoaction .box h1 {
+    color: $light;
+    font-size: 30px;
+  }
+  .calltoaction .box h2 {
+    color: $light;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 20px;
+  }
+  .calltoaction .button {
+    margin-top: 22px;
+    width: 250px;
+  }
+  .calltoaction .in_row{
+    margin-top: 30px;
+    display: block;
+    .textCenter3{
+      margin-top: 10px;
+    }
+  }
+}

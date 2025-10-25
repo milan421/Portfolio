@@ -1,0 +1,178 @@
+.faqs {
+  padding: 70px 0px;
+  background-color: #fff;
+  .boxes {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    .box {
+      max-width: calc(50% - 15px);
+      h6 {
+        font-size: 15px;
+        color: $secondary;
+        margin-bottom: 30px;
+        margin-top: 0;
+      }
+      h2 {
+        color: $primary;
+        font-weight: 700;
+        margin: 0 0 30px 0px;
+        font-size: 35px;
+        span {
+          color: $secondary;
+        }
+      }
+      .centerBtn11{
+        justify-content: flex-start;
+        margin-top: 50px;
+      }
+      p {
+        max-width: 600px;
+        font-size: 18px;
+        margin-bottom: 30px;
+        color: $primary;
+        opacity: 0.6;
+      }
+      .faq_card.question_opened {
+        .iconholder {
+          transform: translateY(-50%) rotate(91deg) !important;
+          i{
+            color: $primary !important;
+          }
+        }
+        .question {
+          .plus_icon .plus_line {
+            // background: #8B93BB;
+          }
+          .plus_icon .plus_line:nth-child(2) {
+            transform: rotate(0) translate(-50%, -50%);
+          }
+        }
+      }
+
+      .question_opened.faq_card{
+        background-color: $primary;
+      }
+      .faq_card {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 15px;
+        background-color: #2e61be;
+        border-radius: 10px;
+        transition: all ease 0.5s;
+        .faq_box{
+          width: 100%;
+        }
+        .lineheight {
+          line-height: 37px !important;
+          color: blue;
+          padding: 10px 36px !important;
+        }
+        .question {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 26px;
+          letter-spacing: 0.4px;
+          color: #fff;
+          padding: 25px 80px 25px 32px;
+
+          cursor: pointer;
+          position: relative;
+
+          .iconholder {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 15px;
+            transition: all 0.25s ease;
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+            border-radius: 10px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i{
+              color: $secondary;
+              transition: all ease 0.5s;
+            }
+          }
+        }
+        .answer {
+          overflow: hidden;
+          max-height: 0;
+          -webkit-transition: all 0.25s ease;
+          -moz-transition: all 0.25s ease;
+          -ms-transition: all 0.25s ease;
+          -o-transition: all 0.25s ease;
+          transition: all 0.25s ease;
+
+          .inner {
+            padding: 26px 36px;
+            padding-top: 0;
+
+            p {
+              font-family: "Roboto", sans-serif;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 17px;
+              line-height: 24px;
+              margin: 0;
+              color: #ffffff;
+              opacity: 1;
+              letter-spacing: 0.3px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  .faqs .boxes {
+    padding: 0px;
+    .box {
+      width: calc(50% - 30px);
+    }
+  }
+  .faqs .boxes .box h1 {
+    max-width: 600px;
+    font-size: 30px;
+  }
+  .faqs .boxes .box h2 br{
+    display: none;
+  }
+  .faqs .boxes .box p {
+    max-width: 600px;
+    font-size: 16px;
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .faqs .boxes .box p{
+    max-width: 100%;
+  }
+  .faqs .boxes{
+    display: block;
+    .box{
+      max-width: 100%;
+      width: 100%;
+    }
+    .box:last-child{
+      margin-top: 50px;
+    }
+  }
+  .faqs .boxes .box .faq_card .question{
+    font-size: 15px;
+  }
+  .faqs .boxes .box .faq_card .answer .inner p{
+    font-size: 14px;
+  }
+  .faqs .boxes .box h2{
+    font-size: 25px;
+    line-height: 30px;
+  }
+}

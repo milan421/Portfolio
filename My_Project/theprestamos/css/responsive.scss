@@ -1,0 +1,427 @@
+@media only screen and (max-width: 1500px) {
+    .sec1 .vector{
+        right: calc(50% - 780px);
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+     .sec1 .vector{
+        right: calc(50% - 885px);
+    }
+    .wrapper{
+        max-width: 700px;
+    }
+    .navbar .dropdown ul{
+        max-width: 350px;
+    }
+    .sec1 .wrapper{
+        max-width: 700px;
+    }
+    .sec1 h1 {
+        font-size: 50px;
+    }
+    .sec1 h4 {
+        font-size: 20px;
+    }
+    .sec1 .input {
+       max-width: 180px;
+    }
+    .sec1 .input button {
+        width: 25px;
+        height: 25px;
+        font-size: 18.5px;
+    }
+    .sec1 .input p {
+        font-size: 25px;
+    }
+    .sec1 a {
+        font-size: 16px;
+    }
+    .sec1 p {
+        font-size: 8px;
+    }
+    .sec2 h1 {
+        font-size: 25px;
+    }
+    .sec2 p {
+        font-size: 19px;
+        margin-top: 30px;
+    }
+    .sec3{
+        min-height: 760px;
+    }
+    .sec3 h1 {
+        font-size: 32px;
+    }
+    .sec3 h3 {
+        line-height: 140%;
+        br{
+            display: none;
+        }
+    }
+    .sec3 .box .white img {
+        width: 85px;
+        height: 85px;
+   }
+   .sec3 .box .white  {
+        padding: 33px;
+   }
+   .sec3 .box .boxes-border {
+       padding: 25px;
+       margin-left: -12px;
+       margin-right: -12px;
+   }
+   .sec3 .box2 {
+       max-width: 540px;
+   }
+   .sec3 .box2 .boxes h4 {
+       font-size: 17px;
+   }
+   .sec3 .box2 .boxes p {
+       br{
+           display: none;
+       }
+       font-size: 18px;
+   }
+   .sec4 .box a {
+       font-size: 13px;
+   }
+   .sec5 h1 {
+       font-size: 33px;
+   }
+   .sec5 p{
+       font-size: 20px;
+       br{
+          display: none;
+       }
+   }
+   .sec6{
+       padding-bottom: 20px;
+   }
+   .sec6 h1{
+        font-size: 27px;
+   }
+   .sec6 p{
+        font-size: 17px;
+   }
+   .sec6 .box{
+       flex-wrap: wrap;
+   }
+   .sec6 .box .boxes{
+       width: calc(33% - 20px);
+       margin-bottom: 80px;
+   }
+   .sec7{
+       
+   }
+   .sec7 .elipse_border {
+        padding: 20px;
+   }
+   .sec7 .elipse_border .white {
+       height: 250px;
+       width: 250px;
+   }
+   .sec7 .elipse_border .white h5 {
+       font-size: 13px;
+   }
+   .sec7 .elipse_border .white h2{
+       font-size: 45px;
+   }
+   .sec7 .elipse_border .white h4 {
+       font-size: 13px;
+   }
+   .sec7 h1 {
+       font-size: 25px;
+   }
+   .sec7 p {
+        font-size: 16px;
+   }
+
+}
+@media only screen and (max-width: 850px) {
+    .wrapper{
+        max-width: 500px;
+    }
+    .navbar .wrapper{
+        max-width: 500px;
+    }
+    .navbar img{
+         margin: unset;
+         left: unset;
+         right: unset;
+         width: 200px;
+         top: -58.5px;
+    }
+    .navbar .button_lines a {
+        font-size: 15px;
+    }
+    .navbar .dropdown ul {
+       max-width: 250px;
+     }
+     .navbar .dropdown ul li a {
+        font-size: 18px;
+    }
+    .sec1{
+        padding-top: 45px;
+        padding-bottom: 45px;
+        min-height: unset;
+        .wrapper{
+            max-width: 500px;
+        }
+        text-align: center;
+    }
+    .sec1 .vector{
+         display: none;
+    }
+    .sec1 h1 {
+      font-size: 44px;
+   }
+   .sec1 h4{
+      font-size: 18px;
+      margin-top: 15px;
+   }
+   .sec1 .inputs {
+    margin: auto;
+    max-width: 425px;
+   }
+   .sec1 a{
+       margin-top: 55px;
+   }
+   .sec1 p{
+       margin-top: 19px;
+   }
+   .sec2{
+      padding-top: 50px;
+      padding-bottom: 50px;
+      min-height: 250px;
+   }
+   .sec2 h1{
+        font-size: 18px;
+   }
+   .sec2 p {
+    font-size: 18px;
+    margin-top: 21px;
+}
+.sec3{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.sec3 h1 {
+    font-size: 28px;
+}
+.sec3 h3{
+    br{
+        display: none;
+    }
+    font-size: 17px;
+}
+.sec3 .box {
+    flex-wrap: wrap;
+}
+.sec3 .box .boxes-border{
+    width: calc(50%-15px;);
+}
+.sec3 .box .boxes-border:nth-child(3) {
+    margin-top: -52px;
+}
+.sec3 .box2 {
+    flex-wrap: wrap;
+    .boxes{
+        width: calc(50% - 40px);
+        margin-right: 20px;
+        margin-right: 20px;
+        p{
+            font-size: 15px;
+            margin-top: 10px;
+            br{
+                display: none;
+            }
+        }
+    }
+    h4{
+        font-size: 16px;
+        margin-top: 20px;
+    }
+}
+.sec4 .box a {
+    font-size: 11px;
+}
+.sec4 .box{
+    max-width: 340px;
+}
+.sec5{
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+.sec5 h1 {
+    font-size: 26px;
+}
+.sec5 p{
+    font-size: 16px;
+}
+.sec6{
+    padding-top: 30px;
+     padding-bottom: 30px;
+}
+.sec6 h1 {
+    font-size: 23px;
+}
+.sec6 p {
+    font-size: 16px;
+}
+.sec6 .box{
+    margin-top: 0px;
+}
+.sec6 .box .boxes {
+    margin-bottom: 0px;
+    margin-top: 50px;
+}
+.sec7{
+    padding-top: 40px;
+    min-height: unset;
+    padding-bottom: 40px;
+}
+.sec7 .elipse_border .white {
+    height: 220px;
+    width: 220px;
+}
+.sec7 h1 {
+    font-size: 20px;
+}
+.sec7 p{
+    margin-bottom: 25px;
+}
+.sec7 a {
+    font-size: 12px;
+}
+}
+@media only screen and (max-width: 499px) {
+     .wrapper{
+        max-width: 320px;
+    }
+    .navbar{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .navbar .wrapper{
+        max-width: 320px;
+    }
+    .navbar .button_lines .butt {
+        display: none;
+    }
+    .navbar .button_lines {
+        max-width: 20px;
+       
+    }
+    .navbar .button_lines a {
+      font-size: 9px;
+    }
+    .navbar img {
+    width: 164px;
+    top: -55.5px;
+   }
+    .navbar .dropdown{
+        top: 76px;
+    } 
+    .navbar .dropdown ul{
+       max-width: 160px;
+    } 
+    .navbar .dropdown ul li a{
+       font-size: 15px;
+    } 
+    .sec1 .wrapper{
+        max-width: 320px;
+    }
+    .sec1{
+        margin-top: 0px;
+        padding-top: 150px;
+    }
+    .sec1 h1 {
+    font-size: 28px;
+   }
+   .sec1 .inputs {
+       display: block;
+       margin: auto;
+       margin-top: 50px;
+       .input{
+           margin: auto;
+           margin-top: 65px;
+       }
+   }
+   .sec1 a{
+      padding: 7px 50px 7px 50px;
+      font-size: 14px;
+          margin-top: 38px;
+   }
+   .sec1 p {
+    font-size: 7px;
+}
+.sec2{
+     padding-top: 35px;
+     padding-bottom: 35px;
+     min-height: 230px;
+}
+.sec2 h1 {
+    font-size: 15px;
+}
+.sec2 p{
+    font-size: 15px;
+}
+.sec3 h1 {
+    font-size: 25px;
+}
+.sec3 h3 {
+    font-size: 15px;
+}
+.sec3 .box .boxes-border {
+    width: unset;
+    margin-top: -20px;
+}
+.sec3 .box .boxes-border:nth-child(3) {
+    margin-top: -20px;
+}
+.sec3 .box2 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    .boxes{
+        width: 100%;
+    }
+}
+.sec4 .box{
+    max-width: 250px;
+}
+.sec4 .box a {
+    font-size: 8px;
+    padding: 10px 25px 10px 25px;
+}
+.sec5 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.sec5 h1 {
+    font-size: 24px;
+}
+.sec6 .box .boxes {
+    margin-bottom: 0px;
+    margin-top: 50px;
+    width: calc(50% - 20px)
+}
+.sec7 a {
+    font-size: 10px;
+}
+.sec7 .elipse_border .white {
+    height: 190px;
+    width: 190px;
+    h5{
+        font-size: 11px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    h4{
+        font-size: 12px;
+    }
+}
+}

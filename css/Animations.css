@@ -1,0 +1,68 @@
+.from_left_to_right_reverse_Individually span,
+.from_right_to_left_reverse_Individually span {
+  display: inline-block;
+  transform: translateX(-1000px);
+  transition: 1s;
+}
+.from_left_to_right_reverse_Individually span.animate,
+.from_right_to_left_reverse_Individually span.animate {
+  transform: translateX(0px);
+}
+.from_top_to_bottom_Individually span {
+  display: inline-block;
+  transform: translateY(-20px);
+  transition: 1s;
+}
+.from_top_to_bottom_Individually span.animate {
+  transform: translateY(0px);
+}
+.from_bottom_to_top_Individually span {
+  display: inline-block;
+  transform: translateY(20px);
+  transition: 1s;
+}
+.from_bottom_to_top_Individually span.animate {
+  transform: translateY(0);
+}
+.from_left_to_right_whole_text {
+  transform: translateX(-25vw);
+  transition: 1s;
+}
+.from_left_to_right_whole_text.animate {
+  transform: translateX(0);
+}
+.from_right_to_left_whole_text {
+  transform: translateX(calc(25vw)); /* Prilagodljiva vrednost */
+  transition: 1s;
+}
+.from_right_to_left_whole_text.animate {
+  transform: translateX(0);
+}
+.typing span {
+  display: inline-block;
+  opacity: 0;
+  transition: 0s;
+}
+.typing span.type {
+  opacity: 1;
+}
+.wave_left_to_right span {
+  display: inline-block;
+  transform: translateX(-50px);
+  transform: translateY(-30px);
+  transition: 1s;
+}
+.wave_left_to_right span.animate {
+  transform: translateX(0px);
+  transform: translateY(0px);
+}
+.wave_right_to_left span {
+  display: inline-block;
+  transform: translateX(-50px);
+  transform: translateY(-30px);
+  transition: 1s;
+}
+.wave_right_to_left span.animate {
+  transform: translateX(0px);
+  transform: translateY(0px);
+} /*# sourceMappingURL=style.css.map */

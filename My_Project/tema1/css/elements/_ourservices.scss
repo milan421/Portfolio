@@ -1,0 +1,108 @@
+.ourservices {
+  background-color: $light;
+  padding: 70px 0;
+  
+  .line{
+      width: 200px;
+      height: 1px;
+      background-color: $primary;
+      margin: auto;
+      margin-top: 30px;
+      margin-bottom: 30px;
+  }
+  .st_p {
+      font-size: 15px;
+      letter-spacing: 2px;
+      text-align: center;
+      margin: auto;
+      margin-bottom: 80px;
+      font-weight: 400;
+      color: $secondary;
+      max-width: 900px;
+  }
+  h2 {
+      color: $primary;
+      font-weight: 700;
+      text-align: center;
+      margin: 0 0 30px 0px;
+      font-size: 30px;
+  }
+  
+  .boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 1300px;
+    width: 100%;
+    .box {
+      width: 25%;
+      background:  linear-gradient($light 0 0) calc(100% - var(--p,0%)) / var(--p,0%) no-repeat, $primary;
+      transition: 0.5s, background-position 0s;
+      padding: 40px;
+      border: 1px solid $light;
+      margin: -1px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      // transition: all ease 0.25s;
+      height: 376px;
+      cursor: pointer;
+      &:hover {
+        --p: 100%;
+        border: 2px solid $light;
+        
+        h3 {
+          color: $primary;
+        }
+        i {
+          color: $primary;
+        }
+        p {
+          height: 100px;
+          color: $primary;
+        }
+      }
+      i {
+        font-size: 30px;
+        color: $light;
+      }
+      h3 {
+        color: $light;
+        font-size: 23px;
+        margin-top: 20px;
+      }
+      p {
+        color: $light;
+        font-size: 16px;
+        display: inline-block;
+        height: 0px;
+        text-align: center;
+        margin-top: 20px;
+        overflow: hidden;
+        transition: all ease-in-out 0.5s;
+      }
+      a {
+        margin-top: 20px;
+        font-size: 15px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1340px) {
+  .ourservices .boxes {
+    max-width: 800px;
+    .box {
+      width: 50%;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .ourservices .boxes {
+    max-width: 500px;
+    .box {
+      width: 100%;
+    }
+  }
+}

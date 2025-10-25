@@ -1,0 +1,350 @@
+@media only screen and (max-width: 1150px) {
+  .wrapper {
+    max-width: 600px;
+    position: relative;
+  }
+  .wrapper_for_page {
+    max-width: 760px;
+  }
+
+  nav .for_mobile {
+    height: 100vh;
+    width: 50%;
+    background: linear-gradient(135deg, #000, #1de099);
+    transition: all 0.2s ease-in;
+    top: 0px;
+    bottom: 0px;
+    left: -100%;
+    overflow: scroll;
+    bottom: 0;
+    display: none;
+    &.active {
+      left: 0px;
+      display: block;
+      position: fixed;
+    }
+    ul {
+      justify-content: center;
+      flex-direction: column;
+      overflow: scroll;
+      align-items: flex-start;
+    }
+  }
+
+  nav .menu .hamburgers {
+    left: calc(50% + 20px);
+    z-index: 2222;
+  }
+  nav .menu .hamburgers .line {
+    width: 30px;
+    left: calc(50% + 20px);
+  }
+
+  nav .menu .hamburgers.flip .line {
+    &:first-child {
+      transform: rotate(50deg);
+    }
+    &:nth-child(2) {
+      transform: rotate(-50deg);
+      margin-top: -1px;
+    }
+    &:nth-child(3) {
+      transform: rotate(-50deg);
+      margin-top: -2px;
+    }
+  }
+  nav .menu .logo {
+    max-width: 130px;
+  }
+  nav.scrolled .logo {
+    max-width: 50px;
+  }
+  .sec1 {
+    padding-top: 120px;
+    padding-bottom: 30px;
+  }
+  .sec1 .box h3 {
+    margin-top: 41px;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .sec1 .box h1 {
+    font-size: 32px;
+  }
+  .sec1 .box h2 {
+    font-size: 20px;
+  }
+  .sec1 .box .tehnology_box .tehnology_boxes h4 {
+    font-size: 20px;
+  }
+  .sec1 .box .tehnology_box .tehnology_boxes p {
+    font-size: 11px;
+    margin-top: 10px;
+  }
+  .sec1 .box p {
+    font-size: 16px;
+    max-width: 400px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .sec1 .box .circle {
+    max-width: 290px;
+    height: 290px;
+
+    right: 0px;
+    top: -25px;
+  }
+  .sec1 .box .tehnology_box {
+    margin-top: 35px;
+  }
+  .sec1 .box .tehnology_box .tehnology_boxes {
+    padding: 10px;
+  }
+  .sec2 h1 {
+    font-size: 32px;
+  }
+  .sec2 h2 {
+    font-size: 20px;
+  }
+  .sec2 .project_boxes {
+    margin-top: 35px;
+  }
+  .sec2 .project_boxes a {
+    height: 250px;
+  }
+  .sec2 {
+    min-height: unset;
+    min-height: 650px;
+  }
+  .sec3 h1 {
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .wrapper {
+    max-width: 500px;
+  }
+  .wrapper_for_page {
+    max-width: 500px;
+  }
+  nav .scrolled .menu .logo {
+    max-width: 100px;
+  }
+
+  nav.scrolled .logo {
+    max-width: 60px;
+    position: absolute;
+    top: 10px;
+    left: 120px;
+  }
+
+  nav.scrolled .logo {
+    z-index: 1;
+    right: calc(50% + 20px);
+  }
+
+  .sec1 {
+    padding-top: 120px;
+    padding-bottom: 30px;
+  }
+  .sec1 .box h3 {
+    margin-top: 41px;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .sec1 .box h1 {
+    font-size: 27px;
+  }
+  .sec1 .box h2 {
+    font-size: 20px;
+  }
+  .sec1 .box .tehnology_box .tehnology_boxes h4 {
+    font-size: 17px;
+  }
+  .sec1 .box .tehnology_box .tehnology_boxes p {
+    font-size: 11px;
+    margin-top: 10px;
+  }
+  .sec1 .box p {
+    font-size: 16px;
+    max-width: 300px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .sec1 .box .circle {
+    max-width: 180px;
+    height: 180px;
+    top: 0px;
+  }
+  .sec1 .box .tehnology_box {
+    margin-top: 35px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  .sec1 .box .tehnology_box .tehnology_boxes {
+    padding: 10px;
+    max-width: 30%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.6);
+  }
+  .sec2 h1 {
+    font-size: 27px;
+  }
+  .sec2 h2 {
+    font-size: 16px;
+  }
+  .sec2 .project_boxes {
+    margin-top: 35px;
+    height: unset;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 25px;
+  }
+  .sec2 .project_boxes a {
+    height: 200px;
+    max-width: calc(50% - 25px);
+    margin-bottom: 15px;
+  }
+  .sec2 {
+    min-height: unset;
+    min-height: 650px;
+  }
+  .sec3 h1 {
+    font-size: 27px;
+  }
+  .sec3 .social a {
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 5px;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  .sec3 {
+    min-height: 300px;
+    padding-bottom: 35px;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .wrapper {
+    max-width: 320px;
+    margin: auto;
+  }
+  .wrapper_for_page {
+    max-width: 280px;
+  }
+  nav {
+    height: 72px;
+  }
+  nav .menu ul {
+    padding: 0 30px;
+  }
+
+  nav .menu .logo {
+    max-width: 60px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    z-index: -1;
+  }
+
+  nav.scrolled .logo {
+    z-index: 1;
+    right: calc(50% + 20px);
+  }
+
+  .sec1 {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    overflow: hidden;
+  }
+  .sec1 .box h3 {
+    margin-top: 41px;
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  .sec1 .box h1 {
+    font-size: 24px;
+  }
+  .sec1 .box h2 {
+    font-size: 18px;
+  }
+  .sec1 .box .tehnology_box .tehnology_boxes h4 {
+    font-size: 13px;
+  }
+  .sec1 .box .tehnology_box .tehnology_boxes p {
+    font-size: 10px;
+    margin-top: 10px;
+  }
+  .sec1 .box p {
+    font-size: 15px;
+    max-width: 300px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .sec1 .box .circle {
+    right: -50px;
+    max-width: 150px;
+    height: 150px;
+    overflow: hidden;
+    bottom: 180px;
+    top: unset;
+    z-index: -1;
+  }
+  .sec1 .box .tehnology_box {
+    margin-top: 35px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .sec1 .box .tehnology_box .tehnology_boxes {
+    padding: 10px;
+    max-width: 30%;
+  }
+  .sec2 h1 {
+    font-size: 25px;
+  }
+  .sec2 h2 {
+    font-size: 15px;
+  }
+  .sec2 .project_boxes {
+    margin-top: 35px;
+    height: unset;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .sec2 .project_boxes a {
+    height: 130px;
+    max-width: calc(50% - 25px);
+    margin-bottom: 0;
+  }
+  .sec2 {
+    min-height: unset;
+    min-height: 500px;
+  }
+  .sec3 h1 {
+    font-size: 25px;
+  }
+  .sec3 h5 {
+    font-size: 14px;
+  }
+  .sec3 .social a {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    gap: 5px;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  .sec3 {
+    min-height: 300px;
+    padding-bottom: 35px;
+  }
+  .sec3 .email a {
+    font-size: 14px;
+  }
+  .footer .content ul a {
+    font-size: 14px;
+  }
+}

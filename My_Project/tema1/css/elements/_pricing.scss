@@ -1,0 +1,230 @@
+.pricing{
+    background-color: $light;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    .line{
+        width: 200px;
+        height: 1px;
+        background-color: $primary;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    p {
+        font-size: 15px;
+        letter-spacing: 2px;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 80px;
+        font-weight: 400;
+        color: $secondary;
+        max-width: 900px;
+    }
+    h2 {
+        color: $primary;
+        font-weight: 700;
+        text-align: center;
+        margin: 0 0 30px 0px;
+        font-size: 30px;
+    }
+    .boxes{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .box{
+            width: 100%;
+            background: linear-gradient($primary 0 0) calc(100% - var(--p,0%)) / var(--p,0%) no-repeat;
+            text-align: center;
+            max-width: 33.33%;
+            padding: 50px 30px 50px;
+            border-radius: 6px;
+            box-shadow: 0px 5px 32px 0px rgba(0, 0, 0, 0.05);
+            transition: 0.5s, background-position 0s;
+            min-height: 550px;
+            // border: 1px solid $primary
+            position: relative;
+            cursor: pointer;
+            p{
+                color: $primary;
+            }
+            h3,h4 span,p, ul li, h4{
+                transition: 0.5s ease-in-out;
+            }
+            &:hover{
+                --p: 100%;
+                color: $light;
+                h3,h4 span,p, ul li{
+                    color: $light;
+                }
+            }
+            .recommended{
+                position: absolute;
+                left: 30px;
+                right: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $light;
+                color: $primary;
+                border-radius: 6px;
+                min-height: 40px;
+                top: -20px;
+                box-shadow: 0px 5px 32px 0px rgba(0, 0, 0, 0.05);
+            }
+
+            .offpr{
+                background-color: $secondary;
+                position: absolute;
+                left: 0;
+                top: 15px;
+                color: $light;
+                font-size: 14px;
+                padding: 5px 25px;
+                border-top-right-radius: 6px;
+                border-bottom-right-radius: 6px;
+            }
+            .offpr_right{
+                right: 0;
+                left: unset;
+                border-radius: 0;
+                border-top-left-radius: 6px;
+                border-bottom-left-radius: 6px;
+            }
+        }
+        .box:nth-child(1){
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        .box:nth-child(3){
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        .box:nth-child(2){
+            min-height: 600px;
+            background:  linear-gradient($secondary 0 0) calc(100% - var(--p,0%)) / var(--p,0%) no-repeat, $primary;
+            padding-top: 75px;
+            padding-bottom: 75px;
+            h3,h4 span,p, ul li{
+                color: $light;
+            }
+            .line{
+                background-color: $light;
+            }
+            ul{
+                li:before{
+                    color: $light;
+                    opacity: 0.5;
+                }
+                .xicon:before{
+                    opacity: 1;
+                }
+            }
+            &:hover{
+                h4{
+                    color: $light;
+                }
+            }
+        }
+        h3{
+            display: block;
+            font-size: 30px;
+            font-weight: 500;
+            color: $primary;
+            text-align: center;
+            letter-spacing: 1px;
+            transition: 0.5s ease-in-out;
+        }
+        h4{
+            font-size: 38px;
+            line-height: 32px;
+            font-weight: 600;
+            color: $secondary;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            margin-top: 20px;
+            span{
+                font-size: 16px;
+                line-height: 32px;
+                font-weight: 600;
+                color: $primary;
+                display: inline-block;
+                margin-left: 5px;
+                letter-spacing: 1px;
+                margin-bottom: -5px;
+            }
+        }
+        p{
+            font-size: 14px;
+            letter-spacing: 0;
+            margin-top: 20px;
+            opacity: 0.7;
+            margin-bottom: 0;
+            line-height: 150%;
+        }
+        .line{
+            width: 100%;
+            height: 1px;
+            background-color: $primary;
+            margin-top: 40px;
+            margin-bottom: 30px;
+            opacity: 0.1;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            text-align: left;
+            li{
+                display: block;
+                font-size: 16px;
+                font-weight: 300;
+                color: $primary;
+                line-height: 170%;
+                padding-left: 28px;
+                margin-bottom: 13px;
+                position: relative;
+                transition: 0.5s ease-in-out;
+            }
+            li:before {
+                content: "\f058";
+                font-family: "Font Awesome 5 Free";
+                font-weight: 400;
+                color: $secondary;
+                position: absolute;
+                left: 1px;
+                top: 0;
+            }
+            .xicon:before {
+                content: "\f057";
+            }
+        }
+    }
+}
+
+@media(max-width: 1000px){
+    .pricing .boxes{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .pricing .boxes .box{
+        max-width: calc(50% - 10px);
+        padding-top: 80px;
+        padding-bottom: 80px;
+        border-radius: 6px !important;
+    }
+    .pricing .boxes .box:nth-child(2){
+        min-height: 500px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+@media(max-width: 650px){
+    .pricing .boxes .box{
+        max-width: 100%;
+    }
+    .pricing .boxes .box:nth-child(2){
+        margin-top: 20px;
+    }
+}

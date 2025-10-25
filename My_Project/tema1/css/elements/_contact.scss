@@ -1,0 +1,282 @@
+.contactSection {
+  background-color: $silver;
+  padding: 70px 0;
+  .line{
+    width: 200px;
+    height: 1px;
+    background-color: $primary;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  p {
+      font-size: 15px;
+      letter-spacing: 2px;
+      text-align: center;
+      margin: auto;
+      margin-bottom: 80px;
+      font-weight: 400;
+      color: $secondary;
+      max-width: 900px;
+  }
+  h2 {
+      color: $primary;
+      font-weight: 700;
+      text-align: center;
+      margin: 0 0 30px 0px;
+      font-size: 30px;
+  }
+  .formHolder {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    .contactForm {
+      width: calc(50% - 15px);
+
+      #contact-form-id {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        margin: auto;
+        .firstRowForm {
+          display: flex;
+          gap: 20px;
+          width: 100%;
+          input {
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            width: 100%;
+            background-color: $light;
+            border: 1px solid transparent;
+            transition: all 0.5s ease-in;
+            &:focus {
+              border: 1px solid #086ad8;
+            }
+          }
+        }
+        .secondRowForm {
+          display: flex;
+          width: 100%;
+          input {
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            width: 100%;
+            background-color: $light;
+            border: 1px solid transparent;
+            transition: all 0.5s ease-in;
+            &:focus {
+              border: 1px solid #086ad8;
+            }
+          }
+        }
+        .contact-message {
+          width: 100%;
+          display: flex;
+          textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            min-height: 100px;
+            font-family: "Poppins";
+            background-color: $light;
+            border: 1px solid transparent;
+            transition: all 0.5s ease-in;
+            &:focus {
+              border: 1px solid #086ad8;
+            }
+          }
+        }
+        .submit-btn {
+          button {
+            position: relative;
+            padding: 10px 30px;
+            overflow: hidden;
+            text-transform: uppercase;
+            border: 1px solid #086ad8;
+            color: #086ad8;
+            border-radius: 50px;
+            background-color: $light;
+          }
+          button:before,
+          button:after {
+            position: absolute;
+            top: 50%;
+            content: "";
+            width: 20px;
+            height: 20px;
+            background-color: #086ad8;
+            border-radius: 50%;
+            z-index: -1;
+          }
+          button:before {
+            left: -20px;
+            transform: translate(-50%, -50%);
+          }
+          button:after {
+            right: -20px;
+            transform: translate(50%, -50%);
+          }
+          button:hover {
+            color: #fff;
+            z-index: 2;
+          }
+          button:hover:before {
+            -webkit-animation: criss-cross-left 0.8s both;
+            animation: criss-cross-left 0.8s both;
+            -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+          }
+          button:hover:after {
+            -webkit-animation: criss-cross-right 0.8s both;
+            animation: criss-cross-right 0.8s both;
+            -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+          }
+        }
+      }
+    }
+    .moreInfo {
+      width: 50%;
+      position: relative;
+      padding-left: 20px;
+      // margin-left: 30px;
+      h2 {
+        color: #2f2f2f;
+        span {
+          color: #086ad8;
+        }
+      }
+      &:before {
+        content: "";
+        display: flex;
+        position: absolute;
+        top: 0%;
+        left: 0;
+        width: 4px;
+        height: 80%;
+        background-color: #086ad8;
+      }
+    }
+  }
+  .contactFooter {
+    .contactLocation {
+      display: flex;
+      justify-content: center;
+      .location {
+        padding: 20px;
+        h3 {
+          color: #2f2f2f;
+          margin-bottom: 10px;
+        }
+        p {
+          font-size: 14px;
+          margin-bottom: 10px;
+          text-align: left;
+          letter-spacing: 0;
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+
+@-webkit-keyframes criss-cross-left {
+  0% {
+    left: -20px;
+  }
+  50% {
+    left: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    left: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+
+@keyframes criss-cross-left {
+  0% {
+    left: -20px;
+  }
+  50% {
+    left: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    left: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+@-webkit-keyframes criss-cross-right {
+  0% {
+    right: -20px;
+  }
+  50% {
+    right: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    right: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+@keyframes criss-cross-right {
+  0% {
+    right: -20px;
+  }
+  50% {
+    right: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    right: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contactSection .formHolder .moreInfo h2{
+    font-size: 24px;
+  }
+  .contactSection p{
+    margin-bottom: 20px;
+  }
+  .contactSection .formHolder .contactForm #contact-form-id{
+    margin-top: 50px;
+  }
+  .contactSection .formHolder .moreInfo h2{
+    text-align: left;
+  }
+  .contactSection .formHolder {
+    flex-direction: column;
+  }
+  .contactSection .moreInfo p{
+    text-align: left;
+  }
+  .contactSection .formHolder .contactForm {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .contactSection .formHolder .moreInfo {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .contactSection .contactFooter .contactLocation {
+    flex-wrap: wrap;
+  }
+  .contactSection .formHolder .contactForm #contact-form-id .firstRowForm {
+    gap: 0px;
+    flex-direction: column;
+  }
+}

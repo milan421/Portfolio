@@ -1,0 +1,233 @@
+.teamsmembers {
+  background-color: $silver;
+  text-align: center;
+
+  padding: 70px 0;
+  
+  .line{
+      width: 200px;
+      height: 1px;
+      background-color: $primary;
+      margin: auto;
+      margin-top: 30px;
+      margin-bottom: 30px;
+  }
+  p {
+      font-size: 15px;
+      letter-spacing: 2px;
+      text-align: center;
+      margin: auto;
+      margin-bottom: 80px;
+      font-weight: 400;
+      color: $secondary;
+      max-width: 900px;
+  }
+  h2 {
+      color: $primary;
+      font-weight: 700;
+      text-align: center;
+      margin: 0 0 30px 0px;
+      font-size: 30px;
+  }
+
+  .boxes {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    position: relative;
+
+    .imgholder {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: auto;
+      position: relative;
+
+      img {
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        object-fit: cover;
+        height: 100%;
+      }
+    }
+    .box.grey {
+      background-color: $primary;
+      .social {
+        background-color: $light;
+      }
+      h2 {
+        color: $light;
+      }
+      h3 {
+        color: $light;
+      }
+      .social{
+        a{
+          i{
+            color: $primary;
+          }
+        }
+        a:hover{
+          i{
+            color: $secondary;
+          }
+        }
+      }
+    }
+    .box {
+      width: calc(25%);
+
+      background-color: $light;
+
+      padding: 20px 10px 20px 10px;
+      position: relative;
+      overflow: hidden;
+      &:hover {
+        .social {
+          visibility: visible;
+          opacity: 1;
+          bottom: 20px;
+        }
+      }
+      h2 {
+        margin: 0;
+        font-size: 20px;
+        margin-top: 20px;
+        color: $primary;
+      }
+      h3 {
+        color: $secondary;
+        font-size: 15px;
+        margin-top: 10px;
+        font-weight: 400;
+      }
+      .social {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 70px;
+        background-color: $primary;
+        align-items: center;
+        position: absolute;
+        left: 15px;
+        right: 15px;
+        bottom: -30px;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.5s;
+        a {
+          line-height: 0px;
+        }
+        i{
+          color: #fff;
+          font-size: 22px;
+          transition: all ease-in-out 0.25s;
+        }
+        a:hover{
+          i{
+            color: $secondary;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .teamsmembers .boxes .box {
+    width: 50%;
+  }
+  
+  
+  .teamsmembers .boxes .box{
+    background-color: $light !important;
+    .social {
+      background-color: $primary !important;
+    }
+    h2 {
+      color: $primary !important;
+    }
+    h3 {
+      color: $secondary !important;
+    }
+    .social{
+      a{
+        i{
+          color: $light !important;
+        }
+      }
+      a:hover{
+        i{
+          color: $secondary !important;
+        }
+      }
+    }
+  }
+  @media(min-width: 600px){
+    .teamsmembers .boxes .box:nth-child(4n+2), .teamsmembers .boxes .box:nth-child(4n+3){
+      background-color: $primary !important;
+      .social {
+        background-color: $light !important;
+      }
+      h2 {
+        color: $light !important;
+      }
+      h3 {
+        color: $light !important;
+      }
+      .social{
+        a{
+          i{
+            color: $primary !important;
+          }
+        }
+        a:hover{
+          i{
+            color: $secondary !important;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+
+  .teamsmembers h1 {
+    font-size: 28px;
+  }
+
+  .teamsmembers .boxes .box {
+    width: 100%;
+  }
+  .teamsmembers .boxes .box:nth-child(even){
+    background-color: $primary !important;
+    .social {
+      background-color: $light !important;
+    }
+    h2 {
+      color: $light !important;
+    }
+    h3 {
+      color: $light !important;
+    }
+    .social{
+      a{
+        i{
+          color: $primary !important;
+        }
+      }
+      a:hover{
+        i{
+          color: $secondary !important;
+        }
+      }
+    }
+  }
+}

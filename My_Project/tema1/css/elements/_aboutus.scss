@@ -1,0 +1,120 @@
+.aboutus {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: $light;
+  .wrapper {
+    .aboutusHolder {
+      display: flex;
+      gap: 30px;
+      .aboutLeft {
+        width: 50%;
+        h6 {
+          font-size: 15px;
+          color: $secondary;
+          margin-bottom: 30px;
+          margin-top: 0;
+        }
+        h2 {
+          color: $primary;
+          font-weight: 700;
+          margin: 0 0 30px 0px;
+          font-size: 40px;
+          span {
+            color: $secondary;
+          }
+        }
+      }
+      .aboutRight {
+        width: 50%;
+
+        p {
+          font-size: 18px;
+          margin-bottom: 30px;
+          color: $primary;
+          opacity: 0.6;
+        }
+        h5 {
+          font-size: 22px;
+          font-weight: 500;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}
+.counterSection {
+  background: $secondary;
+  color: $light;
+  padding: 40px 20px;
+}
+
+.counterSection .counters {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.counterSection .counter {
+  font-size: 45px;
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 1440px) {
+}
+@media screen and (max-width: 1024px) {
+  .aboutus .wrapper .aboutusHolder .aboutLeft h2 {
+    font-size: 33px;
+    line-height: 44px;
+  }
+
+  .aboutus .wrapper .aboutusHolder .aboutRight p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .aboutus .wrapper .aboutusHolder .aboutRight h5 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .counters {
+    .countersHolder {
+      h3 {
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .aboutus .wrapper .aboutusHolder {
+    flex-direction: column;
+  }
+  .aboutus .wrapper .aboutusHolder .aboutLeft {
+    width: 100%;
+  }
+  .aboutus .wrapper .aboutusHolder .aboutRight {
+    width: 100%;
+  }
+  .counterSection .counters {
+    flex-wrap: wrap;
+    .countersHolder {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .counterSection {
+    padding: 0px 0px;
+  }
+  .aboutus .wrapper .aboutusHolder .aboutLeft h2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .aboutus .wrapper .aboutusHolder .aboutRight p {
+    font-size: 14px;
+  }
+  .aboutus .wrapper .aboutusHolder .aboutRight h5 {
+    font-size: 17px;
+    line-height: 23px;
+  }
+}

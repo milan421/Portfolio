@@ -1,0 +1,233 @@
+.mywork{
+	padding-top: 70px;
+	padding-bottom: 70px;
+	overflow: hidden;
+	background: $silver;
+	.line{
+    width: 200px;
+    height: 1px;
+    background-color: $primary;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  p {
+      font-size: 15px;
+      letter-spacing: 2px;
+      text-align: center;
+      margin: auto;
+      margin-bottom: 60px;
+      font-weight: 400;
+      color: $secondary;
+      max-width: 900px;
+  }
+  h2 {
+      color: $primary;
+      font-weight: 700;
+      text-align: center;
+      margin: 0 0 30px 0px;
+      font-size: 30px;
+  }
+	.wrapper{
+		position: relative;
+	}
+	.dots2{
+		max-width: 100px;
+		position: absolute;
+		left: calc(50% - 700px);
+		top: -140px;
+		transform: rotate(150deg);
+		// opacity: 0.5;
+		animation: rotation2 100s infinite linear;
+	}
+	.topp{
+		color: $primary;
+		font-size: 14px;
+		font-weight: 300;
+		text-align: center;
+		max-width: 800px;
+		margin: auto;
+		opacity: 0.5;
+		font-style: italic;
+	}
+
+	.portfolio_place{
+		max-width: 1000px;
+		min-height: 500px;
+		// background: black;
+		margin: auto;
+		margin-top: 50px;
+		.c_row{
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 15px;
+			.box{
+				width: calc(33.33% - 10px);
+
+				.b1{
+					position: absolute;
+					left: -5px;
+					top: -5px;
+					width: 20px;
+					height: 20px;
+					background: $primary;
+				}
+				.b2{
+					position: absolute;
+					right: -5px;
+					top: -5px;
+					width: 20px;
+					height: 20px;
+					background: $primary;
+				}
+				.b3{
+					position: absolute;
+					left: -5px;
+					bottom: -5px;
+					width: 20px;
+					height: 20px;
+					background: $primary;
+				}
+				.b4{
+					position: absolute;
+					bottom: -5px;
+					right: -5px;
+					width: 20px;
+					height: 20px;
+					background: $primary;
+				}
+				.placeforhover{
+					position: absolute;
+					left: 0;
+					right: 0;
+					top: 0;
+					bottom: 0;
+					background: rgba(35, 78, 112, 0.5);
+					opacity: 0;
+					backdrop-filter: blur(10px);
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					.btns{
+            width: 100%;
+            max-width: 200px;
+            .centerBtn11{
+              margin: 0
+            }
+						// a{
+						// 	display: inline-block;
+						// 	padding: 8px 20px;
+						// 	background: $secondary;
+						// 	border-radius: 7px;
+						// 	font-weight: 600;
+						// 	color: $primary;
+						// 	text-decoration: unset;
+						// 	display: block;
+						// 	text-align: center;
+						// 	margin: 15px 0;
+						// 	font-size: 15px;
+						// 	-webkit-transition: all .25s ease;
+						// 	   -moz-transition: all .25s ease;
+						// 	    -ms-transition: all .25s ease;
+						// 	     -o-transition: all .25s ease;
+						// 	        transition: all .25s ease;
+						// }
+						// a:hover{
+						// 	background: $secondary;
+						// 	color: #fff;
+						// }
+					}
+					-webkit-transition: all .25s ease;
+					   -moz-transition: all .25s ease;
+					    -ms-transition: all .25s ease;
+					     -o-transition: all .25s ease;
+					        transition: all .25s ease;
+				}
+				.big_page:hover, .smimg:hover{
+					.placeforhover{
+						opacity: 1;
+					}
+				}
+				.big_page{
+					min-height: 515px;
+					position: relative;
+					box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.16);
+					-webkit-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.16);
+					-moz-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.16);
+				}
+				.img1{
+					position: absolute;
+					left: 0;
+					right: 0;
+					top: 50%;
+					transform: translateY(-50%);
+					min-height: 100%;
+					object-fit: cover;
+				}
+				.smimg{
+					min-height: 250px;
+					position: relative;
+					box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.16);
+					-webkit-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.16);
+					-moz-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.16);
+				}
+				.smimg:nth-child(1){
+					margin-bottom: 15px;
+				}
+			}
+		}
+	}
+}
+
+
+
+@keyframes rotation2 {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(359deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+@media only screen and (max-width: 1050px){
+  .mywork .portfolio_place .c_row .box{
+		width: calc(50% - 7.5px);
+	}
+	.mywork .portfolio_place .c_row .box:last-child{
+		display: none;
+	}
+	.mywork .portfolio_place .c_row .box .placeforhover{
+		opacity: 1;
+		top: unset;
+	}
+}
+@media only screen and (max-width: 715px){
+  .mywork .portfolio_place .c_row .box {
+	    width: 100%;
+      max-width: 300px;
+      display: block;
+      margin: auto;
+	}
+	.mywork .portfolio_place .c_row {
+	    flex-wrap: wrap;
+	}
+	.mywork .portfolio_place .c_row .box .big_page{
+		margin-bottom: 15px;
+	}
+	.mywork .portfolio_place .c_row:nth-child(2) .box:first-child{
+		display: none;
+		.big_page{
+			margin-bottom: 0;
+		}
+	}
+  .mywork .portfolio_place .c_row .box .placeforhover{
+		background: $primary;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	}
+}

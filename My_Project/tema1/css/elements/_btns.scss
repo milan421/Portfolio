@@ -1,0 +1,246 @@
+.centerBtn11 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 0;
+  a {
+    text-decoration: none;
+    position: relative;
+    padding: 12px 30px;
+    overflow: hidden;
+    text-transform: uppercase;
+    border: 1px solid $light;
+    font-size: 18px;
+    color: $light;
+    border-radius: 50px;
+    width: 100%;
+    max-width: 300px;
+    letter-spacing: 1px;
+    transition: all ease 0.25s;
+    
+    span{
+      z-index: 5;
+      position: relative;
+    }
+  }
+  a:before,
+  a:after {
+    position: absolute;
+    top: 50%;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: $light !important;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  a:before {
+    left: -20px;
+    transform: translate(-50%, -50%);
+  }
+  a:after {
+    right: -20px;
+    transform: translate(50%, -50%);
+  }
+  a:hover {
+    color: $secondary;
+    transition: all ease 0.25s;
+    transition-delay: 0.4s;
+  }
+  a:hover:before {
+    -webkit-animation: criss-cross-left 0.8s both;
+    animation: criss-cross-left 0.8s both;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+  }
+  a:hover:after {
+    -webkit-animation: criss-cross-right 0.8s both;
+    animation: criss-cross-right 0.8s both;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+  }
+}
+.centerBtn11.secundarycolor{
+  a{
+    color: $primary;
+    border-color: $primary;
+  }
+  a:hover{
+    color: $secondary;
+    border-color: #fff;
+  }
+}
+.box:hover .centerBtn11.secundarycolor{
+  a{
+    color: $light;
+    border-color: $light;
+  }
+  a:hover{
+    color: $secondary;
+  }
+}
+
+.centerBtn11.darkbtn{
+  a{
+    color: $primary;
+    border-color: $primary;
+  }
+  a:hover{
+    color: $secondary;
+    border-color: #fff;
+  }
+}
+.centerBtn11.darkbtn a:before, .centerBtn11.darkbtn a:after{
+  background-color: $primary !important;
+}
+.box:hover .centerBtn11.darkbtn{
+  a:hover{
+    color: $light;
+  }
+}
+
+
+
+
+@-webkit-keyframes criss-cross-left {
+  0% {
+    left: -20px;
+  }
+  50% {
+    left: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    left: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+
+@keyframes criss-cross-left {
+  0% {
+    left: -20px;
+  }
+  50% {
+    left: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    left: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+@-webkit-keyframes criss-cross-right {
+  0% {
+    right: -20px;
+  }
+  50% {
+    right: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    right: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+@keyframes criss-cross-right {
+  0% {
+    right: -20px;
+  }
+  50% {
+    right: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    right: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+// hover for text
+.textCenter3 {
+  text-align: center;
+  a {
+    font-size: 20px;
+    background-image: linear-gradient(to right, $links, $links 50%, $light 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+
+  a:before {
+    content: "";
+    background: $light;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  a:hover {
+    background-position: 0;
+  }
+
+  a:hover::before {
+    width: 100%;
+  }
+}
+
+.readmore.textCenter3{
+  text-align: left;
+  a{
+    background-image: linear-gradient(to right, $primary, $primary 50%, $secondary 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    transition: all 0.3s ease-in-out;
+  }
+  a:before {
+    content: "";
+    background: $secondary;
+  }
+  a:hover {
+    background-position: 0;
+  }
+}
+
+.ourservices .textCenter3{
+  text-align: left;
+  a{
+    background-image: linear-gradient(to right, $primary, $primary 50%, $secondary 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    transition: all 0.3s ease-in-out;
+  }
+  a:before {
+    content: "";
+    background: $secondary;
+  }
+  a:hover {
+    background-position: 0;
+  }
+}
+
