@@ -2,6 +2,22 @@
 let dark_theme = document.querySelector(".night_mode a");
 let img = dark_theme.querySelector("img");
 let background = document.querySelector(".background");
+let popup_menu = document.querySelector(".hamburgers");
+let formobile = document.querySelector(".for_mobile");
+
+popup_menu.addEventListener("click", function (active) {
+  active.preventDefault();
+  if (popup_menu.classList.contains("rotate")) {
+    popup_menu.classList.remove("rotate");
+  } else {
+    popup_menu.classList.add("rotate");
+  }
+  if (formobile.classList.contains("drag")) {
+    formobile.classList.remove("drag");
+  } else {
+    formobile.classList.add("drag");
+  }
+});
 
 dark_theme.addEventListener("click", function (event) {
   event.preventDefault();

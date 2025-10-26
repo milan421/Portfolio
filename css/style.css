@@ -134,7 +134,8 @@ nav nav::after {
 }
 nav .for_mobile {
   height: 100%;
-  transition: all 0.2s;
+  transition: 0.2s;
+  left: -300px;
 }
 nav .menu {
   width: 100%;
@@ -150,6 +151,17 @@ nav .menu .hamburgers {
   min-height: 20px;
   z-index: 3;
   cursor: pointer;
+}
+nav .menu .hamburgers.rotate .line:nth-child(1) {
+  transform: rotate(35deg);
+}
+nav .menu .hamburgers.rotate .line:nth-child(2) {
+  transform: rotate(-35deg);
+  margin-top: -2px;
+}
+nav .menu .hamburgers.rotate .line:nth-child(3) {
+  transform: rotate(35deg);
+  margin-top: -2px;
 }
 nav .menu .hamburgers .line {
   width: 0px;

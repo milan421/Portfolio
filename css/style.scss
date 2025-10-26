@@ -138,12 +138,14 @@ nav {
   }
   .for_mobile {
     height: 100%;
-    transition: all 0.2s;
+    transition: 0.2s;
+    left: -300px;
   }
   .menu {
     width: 100%;
     position: relative;
     height: 100%;
+
     .hamburgers {
       position: absolute;
       left: 50%;
@@ -152,6 +154,21 @@ nav {
       z-index: 1;
       min-height: 20px;
       z-index: 3;
+      &.rotate {
+        .line:nth-child(1) {
+          transform: rotate(35deg);
+        }
+
+        .line:nth-child(2) {
+          transform: rotate(-35deg);
+          margin-top: -2px;
+        }
+
+        .line:nth-child(3) {
+          transform: rotate(35deg);
+          margin-top: -2px;
+        }
+      }
       cursor: pointer;
       .line {
         width: 0px;

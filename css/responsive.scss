@@ -17,10 +17,9 @@
     left: -100%;
     overflow: scroll;
     bottom: 0;
-    display: none;
-    &.active {
-      left: 0px;
-      display: block;
+    position: fixed;
+    &.drag {
+      left: 0%;
       position: fixed;
     }
     ul {

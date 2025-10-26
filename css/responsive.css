@@ -16,11 +16,10 @@
     left: -100%;
     overflow: scroll;
     bottom: 0;
-    display: none;
+    position: fixed;
   }
-  nav .for_mobile.active {
-    left: 0px;
-    display: block;
+  nav .for_mobile.drag {
+    left: 0%;
     position: fixed;
   }
   nav .for_mobile ul {
