@@ -162,9 +162,9 @@
     margin-bottom: 20px;
   }
   .sec1 .box .circle {
-    max-width: 100px;
-    height: 100px;
-    top: 89px;
+    max-width: 130px;
+    height: 130px;
+    top: 0px;
   }
   .sec1 .box .tehnology_box {
     margin-top: 35px;
@@ -269,11 +269,11 @@
     margin-bottom: 20px;
   }
   .sec1 .box .circle {
-    right: -50px;
-    max-width: 150px;
-    height: 150px;
+    right: 11px;
+    max-width: 90px;
+    height: 90px;
     overflow: hidden;
-    bottom: 180px;
+    bottom: 247px;
     top: unset;
     z-index: -1;
   }
