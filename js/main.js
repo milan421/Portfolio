@@ -4,9 +4,11 @@ let img = dark_theme.querySelector("img");
 let background = document.querySelector(".background");
 let popup_menu = document.querySelector(".hamburgers");
 let formobile = document.querySelector(".for_mobile");
+let formobile_ul = formobile.querySelector("ul");
 
 popup_menu.addEventListener("click", function (active) {
   active.preventDefault();
+  formobile_ul.classList.add("animate");
   if (popup_menu.classList.contains("rotate")) {
     popup_menu.classList.remove("rotate");
   } else {
