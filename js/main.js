@@ -8,7 +8,9 @@ let formobile_ul = formobile.querySelector("ul");
 
 popup_menu.addEventListener("click", function (active) {
   active.preventDefault();
-  formobile_ul.classList.add("animate");
+  if (!formobile_ul.classList.contains("animate")) {
+    formobile_ul.classList.add("animate");
+  }
   if (popup_menu.classList.contains("rotate")) {
     popup_menu.classList.remove("rotate");
   } else {
