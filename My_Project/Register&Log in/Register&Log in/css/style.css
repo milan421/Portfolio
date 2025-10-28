@@ -47,4 +47,261 @@ body {
   padding-left: 10px;
   padding-right: 10px;
   margin: auto;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.register {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+}
+.register .labelcheck {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.register .inputcheck {
+  margin-bottom: 30px;
+}
+.register .inputcheck #check {
+  height: 27px;
+  width: 27px;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: transparent;
+}
+.register .inputcheck h4 {
+  font-size: 17px;
+}
+.register .boxes {
+  display: flex;
+  height: 100%;
+  overflow: scroll;
+}
+.register .boxes .box {
+  height: 100% !important;
+  min-height: 660px;
+}
+.register .boxes .blue {
+  background-color: rgba(48, 12, 249, 0.615);
+  position: relative;
+  width: 40%;
+  height: 100%;
+
+  padding: 50px 50px;
+}
+.register .boxes .blue h1 {
+  color: #fff;
+  font-size: 40px;
+  max-width: 360px;
+}
+.register .boxes .blue .pc {
+  position: absolute;
+  left: calc(50% - 105px);
+  top: 250px;
+  width: 292px;
+  animation: pc 20s ease 0s infinite normal forwards;
+  z-index: 0;
+}
+
+.register .boxes .white {
+  width: 60%;
+  height: 100%;
+  padding: 50px 0px;
+}
+.register .boxes .white .inner {
+  max-width: 700px;
+  width: 100%;
+  margin: auto;
+}
+.register .boxes .white .google {
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.2156862745);
+  border-radius: 10px;
+  display: inline-block;
+  font-size: 16px;
+  background-color: #fff;
+  padding: 20px 30px 20px 70px;
+  margin-top: 20px;
+  transition: all 0.25s;
+  margin-bottom: 30px;
+  color: #000;
+  text-decoration: none;
+}
+.register .boxes .white .google:hover {
+  border: 1px solid rgb(33, 33, 231);
+}
+.register .boxes .white .google img {
+  position: absolute;
+  width: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+}
+.register .boxes .white p {
+  margin-bottom: 30px;
+}
+.register .boxes .white .inputext input:focus + p {
+  position: absolute;
+  top: 0px;
+  right: unset;
+}
+.register .boxes .white .inputext {
+  max-width: 400px;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  position: relative;
+  transition: all 0.25s;
+}
+.register .boxes .white .inputext .visible {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+  height: 20px;
+  width: 20px;
+  display: none;
+  cursor: pointer;
+}
+.register .boxes .white .inputext .visible.active {
+  display: block;
+}
+.register .boxes .white .inputext .invisibly {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 20px;
+  width: 20px;
+  display: block;
+  cursor: pointer;
+}
+.register .boxes .white .inputext .invisibly.active {
+  display: none;
+}
+.register .boxes .white .inputext:hover p {
+  position: absolute;
+  top: 0px;
+}
+.register .boxes .white .inputext:hover input {
+  border: 1px solid rgb(33, 33, 231);
+}
+.register .boxes .white .inputext p {
+  background-color: #fff;
+  padding: 5px 15px;
+  position: absolute;
+  top: 50%;
+  left: 23px;
+  transform: translateY(-50%);
+  transition: all 0.25s;
+  color: #000;
+}
+.register .boxes .white .inputext p.active {
+  top: 0px;
+}
+.register .boxes .white .inputext input {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2156862745);
+  transition: all 0.25s;
+  padding: 0px 50px 0px 30px;
+}
+.register .boxes .white .inputext input:focus {
+  border: 1px solid rgb(33, 33, 231);
+}
+.register .boxes .white .registerbtn {
+  display: inline-block;
+  margin-top: 1px;
+  background-color: rgba(48, 12, 249, 0.615);
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 14px 66px;
+  color: #fff;
+  border: 0px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .register .boxes .white {
+    width: 50%;
+  }
+  .register .boxes .blue {
+    width: 50%;
+  }
+  .register .boxes .white .inner {
+    max-width: 400px;
+    display: block;
+  }
+  .register .boxes .white .inner form {
+    width: 100%;
+  }
+  .register .boxes .blue .data {
+    left: calc(50% - 197px);
+    top: 310px;
+    width: 151px;
+  }
+  .register .boxes .blue .peoples {
+    left: calc(50% - 100px);
+    top: 218px;
+    width: 300px;
+  }
+  .register .boxes .blue .pc {
+    left: calc(50% - 80px);
+    top: 300px;
+    width: 234px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .register .boxes .blue h1 {
+    font-size: 35px;
+    margin: auto;
+  }
+  .register .boxes {
+    display: block;
+    min-height: 560px;
+  }
+  .register .boxes .blue {
+    width: 100%;
+  }
+  .register .boxes .white {
+    width: 100%;
+  }
+  .register .boxes .white .inner form {
+    margin-top: 30px;
+  }
+  .register .boxes .white .inner h1 {
+    font-size: 35px;
+  }
+  .register .boxes .blue .peoples {
+    display: none;
+  }
+  .register .boxes .blue .data {
+    display: none;
+  }
+  .register .boxes .blue .pc {
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    top: 260px;
+    width: 234px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .register .boxes .white {
+    padding: 50px 20px;
+  }
+  .register .boxes .white .inner h1 {
+    font-size: 30px;
+  }
+  .register .boxes .white .inner p {
+    font-size: 15px;
+  }
+  .register .boxes .blue h1 {
+    font-size: 27px;
+    margin: auto;
+  }
+} /*# sourceMappingURL=style.css.map */
